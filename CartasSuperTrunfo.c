@@ -16,6 +16,9 @@ int main() {
     float area1, area2;
     float PIB1, PIB2;
     int turisticos1, turisticos2;
+    float densidade;
+    float riqueza_media;
+    
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -27,7 +30,7 @@ int main() {
 
       printf("  ◻️ Carta 1️⃣\n");
 
-      printf("\n");
+        printf("\n");
 
     printf("Digite a letra do Estado (A - H): ");
         scanf("%c", &estado1);
@@ -44,11 +47,13 @@ int main() {
     printf("Digite o número de pontos Turísticos: ");
         scanf("%d", &turisticos1);
 
+            densidade = populacao1 / area1;
+
         printf("\n");
     
       printf("  ◻️ Carta 2️⃣\n");
 
-      printf("\n");
+        printf("\n");
 
     printf("Digite a letra do Estado (A - H): ");
         scanf("%s", &estado2);
@@ -65,14 +70,16 @@ int main() {
     printf("Digite o número de pontos Turísticos: ");
         scanf("%d", &turisticos2);
 
-    printf("\n");
+            densidade = populacao2 / area2;
+
+        printf("\n");
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     printf("\nCartas cadastradas com sucesso! ✅\n");
 
-    printf("\n");
+        printf("\n");
 
     printf(" ◻️ CARTA 01 🂱 \n");
 
@@ -91,6 +98,8 @@ int main() {
     printf("💸  PIB: %.2f bilhões de reais\n", PIB1);
         
     printf("📸  Número de Pontos Turísticos: %d\n", turisticos1);
+
+    printf("Número de habitantes por quilômetro quadrado: %.2f\n", populacao1, area1);
         
 
         printf("\n");
@@ -113,11 +122,9 @@ int main() {
         
     printf("📸  Número de Pontos Turísticos: %d\n", turisticos2);
 
+    printf("Número de habitantes por quilômetro quadrado: %.2f\n", populacao2, area2);
 
-
-    printf("\n");
-
-
+        printf("\n");
 
     return 0;
 }
