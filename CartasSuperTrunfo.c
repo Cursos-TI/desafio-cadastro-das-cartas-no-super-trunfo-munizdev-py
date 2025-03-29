@@ -17,7 +17,7 @@ int main() {
     float PIB1, PIB2;
     int turisticos1, turisticos2;
     float densidade;
-    float riqueza_media;
+    float PPC;
     
 
     // Cadastro das Cartas:
@@ -49,6 +49,8 @@ int main() {
 
             densidade = populacao1 / area1;
 
+            PPC = PIB1 / populacao1;
+
         printf("\n");
     
       printf("  ◻️ Carta 2️⃣\n");
@@ -71,6 +73,8 @@ int main() {
         scanf("%d", &turisticos2);
 
             densidade = populacao2 / area2;
+
+            PPC = PIB2 / populacao2;
 
         printf("\n");
     // Exibição dos Dados das Cartas:
@@ -99,7 +103,9 @@ int main() {
         
     printf("📸  Número de Pontos Turísticos: %d\n", turisticos1);
 
-    printf("Número de habitantes por quilômetro quadrado: %.2f\n", populacao1, area1);
+    printf("📍  Densidade Populacional: %.2f hab/km²\n", densidade);
+
+    printf("💲  PIB per Capita: R$ %.2f\n", PPC);
         
 
         printf("\n");
@@ -122,7 +128,9 @@ int main() {
         
     printf("📸  Número de Pontos Turísticos: %d\n", turisticos2);
 
-    printf("Número de habitantes por quilômetro quadrado: %.2f\n", populacao2, area2);
+    printf("📍  Densidade Populacional: %.2f hab/km²\n", densidade);
+
+    printf("💲  PIB per Capita: R$ %.2f\n", PPC);
 
         printf("\n");
 
