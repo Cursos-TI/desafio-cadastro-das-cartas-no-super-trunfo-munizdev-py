@@ -85,7 +85,7 @@ int main() {
         scanf("%d", &turisticos2);
 
             densidade2 = populacao2 / area2;
-
+            
             PPC2 = (PIB2 * 1000000000.0f) / populacao2;
 
         printf("\n");
